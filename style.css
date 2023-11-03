@@ -1,0 +1,15 @@
+.card-img {
+  width: 150px;
+  max-height: 150px;
+}
+
+.card {
+  height: 300px;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
