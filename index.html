@@ -1,130 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Tang's Site</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Tang's Site</title>
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#">Jason Tang</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Jason Tang" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jason Tang">Jason Tang</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+            <li class="contact-item">
+  
+              <div class="icon-box">
+                <ion-icon name="download-outline"></ion-icon>
+              </div>
+  
+              <div class="contact-info">
+                <p class="contact-title">Resume</p>
+  
+                <a href="./assets/pdf/Resume.pdf" class="contact-link">Download</a>
+              </div>
+  
+            </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jasontang001/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:jason.tang.job@gmail.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/AsonJtsz" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--- #ABOUT -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A highly motivated software developer with background in computer science, delivered multiple projects in Python, Java, Javascript and many languages.
+            Excellence in problem-solving, collaborating with teams and able to work under pressure. Ready to contribute technical expertise 
+            and creativity to drive success, committed to continuous learning and growth. Looking to become a senior in full-stack developer in 5 years.
+          </p>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--- #RESUME-->
+
+      <article class="experience" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The Chinese University of Hong Kong</h4>
+              <h5 class="h4 timeline-item-title">Bsc in Computer Science</h5>
+              <span>2018 - 2022</span>
+
+              <ol class="timeline-text">
+                <li class="timeline-text add-dot">CGPA: 3.33/4.0 </li>
+                <li class="timeline-text add-dot">Awards: Dean's List 2021-2022 </li>
+              </ol>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer</h4>
+
+              <span>Jul 2022 - Feb 2023</span>
+
+                <ol class="timeline-text">
+                    <li class="timeline-text">Python, MySQL, Javascript, Bootstrap </li>
+                    <li class="timeline-text add-dot">Developed and maintained software systems and website in Hong Kong Computer Emergency Response Team Coordination Centre (HKCERT team) </li>
+                    <li class="timeline-text add-dot">Integrated Azure OpenAI into the existing internal and external applications to enhance productivity and user experience, increase user engagement in company website by 20% </li>
+                    <li class="timeline-text add-dot">Designed and developed a new application, leveraging ChatGPT technology, to assist colleagues with their daily tasks, improving productivity and efficiency by 30%</li>
+                    <li class="timeline-text add-dot">Crafted and updated documents using Microsoft Word to articulate comprehensive details and workflow of my applications, including the integration of new features for the team. </li>
+                </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Software Developer</h4>
+  
+                <span>Jul 2022 - Feb 2023</span>
+  
+                  <ol class="timeline-text">
+                      <li class="timeline-text">Java, Spring Boot, Vue.js, SQL Server </li>
+                      <li class="timeline-text add-dot">Worked in Vue.js frontend and Java backend at a high-impact, large-scale project, with 50+ Developers in building new company registration and management systems for Hong Kong government. </li>
+                      <li class="timeline-text add-dot">Collaborated actively with the team to debug and deploy Java classes, ensuring the smooth operation of critical back-end functionalities of the company registry project for the Hong Kong government.</li>
+                      <li class="timeline-text add-dot">Developed a user-friendly registration portal using Vue.js, improving the company registration process for Hong Kong businesses.</li>
+                  </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Game Developer Intern</h4>
+  
+                <span>Jun 2021 -- Aug 2021</span>
+  
+                  <ol class="timeline-text">
+                      <li class="timeline-text"> Unity, C#</li>
+                      <li class="timeline-text add-dot">Conceptualized and executed the development of a Unity-based game, transforming a creative concept into a functional prototype. </li>
+                      <li class="timeline-text add-dot">Collaborated seamlessly with the art team, bringing a harmonious fusion of programming and artistic elements to enhance the visual and interactive aspects of the game project. </li>
+                  </ol>
+                 
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+            
+            <div class="skills-list">
+                <div class="skills-item timeline-text">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+                    <p>Python</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/>
+                    <p>Java</p>
+                </div>
+                
+                <div class="skills-item timeline-text">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript"/>
+                    <p>Javascript</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
+                  <p>HTML</p>
+                </div>
+                
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/>
+                  <p>CSS</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"/>
+                  <p>Unity</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+                  <p>C/C++</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs"/>
+                  <p>Node.js</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
+                  <p>MySQL</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring"/>
+                  <p>Spring</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS"/>
+                  <p>AWS</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
+                  <p>Azure</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" alt="Git"/>
+                  <p>Git</p>
+                </div>
+          
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"  alt="VS Code"/>
+                  <p>VS Code</p>
+                </div>
+          
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js"/>
+                  <p>Vue.js</p>
+                </div>
+          
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+                  <p>React</p>
+                </div>
+
+                <div class="skills-item timeline-text">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
+                  <p>Linux</p>
+                </div>
+               
+
+          
+
+            </div>
+          
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--- #PORTFOLIO-->
+
+      <article class="portfolio" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Project</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li> -->
+            
+            <li class="filter-item">
+                <button data-filter-btn>Game development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+              
+              <li class="select-item">
+                <button data-select-item>Game development</button>
+              </li>
+
             </ul>
-        </div>
-    </nav>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 text-justify">
-                    <h2>Hey, I'm Jason! 👋 </h2>
-                    <p>Welcome to my corner of the web! I'm a passionate software developer, recently graduated from The Chinese University of Hong Kong with 1 year of industry experience. This website host some of my projects over the years.</p>
-                </div>
-                <div class="col-lg-2">
-                    <img src="assets/yuumi.png" alt="0.0? try refresh"class="img-fluid">
-                </div>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://play.google.com/store/apps/details?id=com.NoN.ZombieSurvivor">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/zombie_survivor.png" alt="Zombie Survivor" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Zombie Survivor</h3>
+
+                <p class="project-category">Game development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/AsonJtsz/UnityToonShader">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/unity_toon_shader.png" alt="Unity Toon Shader" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Unity Toon Shader</h3>
+
+                <p class="project-category">Game development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/AsonJtsz/HDR-Tone-Mapping-and-Image-Upscaling">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/dynamic_image_enhancer.jpg" alt="Dynamic Image Enhancer" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dynamic Image Enhancer</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/AsonJtsz/LZW-Compression-DCT-and-IDCT-Implementation">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/datawise.jpg" alt="DataWise: Data Compressor" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DataWise: Data Compressor</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game development">
+              <a href="https://github.com/AsonJtsz/Simple-Opengl-Game">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/space_invader.png" alt="Space Invader" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Space Invader</h3>
+
+                <p class="project-category">Game development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/AsonJtsz/ASCII-Art-and-BMP-Image-Conversion">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-images/ascii_art.png" alt="ASCII Art Convertor" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ASCII Art Convertor</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--- #CONTACT-->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">Projects</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <a href="https://play.google.com/store/apps/details?id=com.NoN.ZombieSurvivor" class="card btn" target="_blank">
-                        <img src="assets/zombie_survivor.png" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Zombie Survivors</h5>
-                            <p class="card-text">A 3D unity game heavily inspired by a 2D game "Vampire Survivors"</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://github.com/AsonJtsz/UnityToonShader" class="card btn" target="_blank">
-                        <img src="assets/unity_toon_shader.png" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Unity Toon Shader</h5>
-                            <p class="card-text">A Shader that make apply japanese cartoon effect on all models</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://github.com/AsonJtsz/HDR-Tone-Mapping-and-Image-Upscaling" class="card btn" target="_blank">
-                        <img src="assets/dynamic_image_enhancer.jpg" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Dynamic Image Enhancer</h5>
-                            <p class="card-text">A tool to help tone HDR image to jpg and AI upscaling for image</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <a href="https://github.com/AsonJtsz/LZW-Compression-DCT-and-IDCT-Implementation" class="card btn" target="_blank">
-                        <img src="assets/datawise.jpg" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">DataWise: Data Compressor</h5>
-                            <p class="card-text">A tool to compress and decompress binary and image file</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="https://github.com/AsonJtsz/Simple-Opengl-Game" class="card btn" target="_blank">
-                        <img src="assets/space_invader.png" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Space Invader</h5>
-                            <p class="card-text">A opengl game made from scratch</p>
-                        </div>
-                    </a>
-                </div> 
-                <div class="col-md-3">
-                    <a href="https://github.com/AsonJtsz/ASCII-Art-and-BMP-Image-Conversion" class="card btn" target="_blank">
-                        <img src="assets/ascii_art.png" class="card-img-top card-img mx-auto">
-                        <div class="card-body">
-                            <h5 class="card-title">ASCII Art Convertor</h5>
-                            <p class="card-text">Turn any image into ASCII art</p>
-                        </div>
-                    </a>
-                </div>
-        </div>
-    </section>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-    <!-- Contact Section -->
-    <section id="contact" class="col-lg-6 py-5 mx-auto">
-        <div class="container col-lg-6">
-            <h2 class="text-center">Contact Me</h2>
-            <p class="text-center">Feel free to get in touch with me.</p>
-            <p> Email: <a href="mailto:jasontangtsz@gmail.com">jasontangtsz@email.com</a> </p>
-            <p> Github: <a href="https://github.com/AsonJtsz">AsonJtsz</a> </p>
-        </div>
-    </section>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
 
-    <footer class="text-center py-3">
-        <p>&copy; 2023 Jason Tang</p>
-    </footer>
+          </form>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--- ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
